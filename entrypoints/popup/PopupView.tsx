@@ -1,4 +1,4 @@
-/import type { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import type { ProviderId } from '@/core/model';
 import type { Job } from '@/core/jobs';
 import { getAdapter } from '@/adapters';
@@ -758,7 +758,8 @@ export function PopupView({
                   {job.report.targetTruncated && (
                                                           <div className="report-truncated-hint">
                                                             高德接口单次最多返回1000条，实际总数可能更高，请以手机App显示为准
-                                                  </div>
+                                                                    </div>
+                                    )}
                 </div>
               )}
             </div>
